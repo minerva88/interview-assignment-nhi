@@ -1,6 +1,6 @@
 import { Navbar } from "react-bootstrap";
 
-export default function Navbar() {
+export default function Header() {
 
     return (
         <>

@@ -1,0 +1,13 @@
+.user-details {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    &__info {
+        margin: 20px auto;
+    }
+}

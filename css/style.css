@@ -1,0 +1,21 @@
+h1, h2, h3 {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.user-card {
+  max-width: 300px;
+  margin: 15px auto;
+  border-radius: 0;
+}
+
+.user-card__image {
+  height: 300px;
+  border-radius: 0;
+}
+
+.repo-card {
+  max-width: 350px;
+  margin: 15px auto;
+}
+/*# sourceMappingURL=style.css.map */

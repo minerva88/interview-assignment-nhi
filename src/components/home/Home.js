@@ -1,5 +1,6 @@
 import { BASE_URL } from '../../constants/api';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 
@@ -48,11 +49,13 @@ export default function Home() {
                 
                 return (
                     
-                        <Card key={user.id} className="user-card">
+                        <Card key={user.id} className="user-card shadow">
                             <Card.Img className="user-card__image" src={user.avatar_url} />
                             <Card.Body>
                                 <Card.Title className="user-card__title">Username: {user.login}</Card.Title>
+                                <Link to={`users/${user.login}`}>
                                 <Button className="user-card__button" variant='primary'>Details</Button>
+                                </Link>
                             </Card.Body>
                         </Card>
                     

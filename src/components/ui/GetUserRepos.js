@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Card } from "react-bootstrap";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { BASE_URL } from "../../constants/api";
 
 export default function GetUserRepos() {

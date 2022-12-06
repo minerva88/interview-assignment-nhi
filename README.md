@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Frontend Assignment for NHI
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### `npx create-react-app .`
 
-In the project directory, you can run:
+### `npm install react-router-dom`
 
-### `npm start`
+### `npm install react-bootstrap`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `npm install sass`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Notes
 
-### `npm test`
+Home page renders a list of users from the [Github API](https://docs.github.com/en/rest/reference/users) with a button/link to a details page for the user.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Home page also have a search-function for the rendered list.
 
-### `npm run build`
+Details page for each user renderes properties from the API, such as blog adress, amount of followers and company name, as well as a list of public repositories.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Further improvements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+UX/UI:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Place searchbar in navbar, implement dropdown typeahead functionality (for use also when visiting other pages than Home-page).
 
-### `npm run eject`
+- Display list in a grid on desktop/tablet sized screens.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Choose fonts and colours resembling those on the Github site for better user experience.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Make a proper layout for Details page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Security:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- My experience is only with authorization by JWT-auth from APIs, and restricting access to admin-dashboards, f.ex., with the bare basics of security.
 
-## Learn More
+Organization: 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Organized CSS by adding Sass and organize files in partials. Would use more descriptive folders with bigger projects.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Organized pages and components in their own folders. 
 
-### Code Splitting
+- Would further implement Prop-Type checks in components and split up parts of components in their own descriptive folders.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Refactoring: 
 
-### Analyzing the Bundle Size
+- Shorten syntax and make changes to follow the DRY-principle
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Do usability/WCAG checks of the site when styled
 
-### Making a Progressive Web App
+- Probably use Next.js for simpler routing and better organization of component-files.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
